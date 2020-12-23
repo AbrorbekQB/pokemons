@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pokemons</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="container">
+    
+    <form class="search__form">
+      <label for="search__input" class="search__label visually-hidden">input - search by pokemon name</label>
+      <input type="text" class="search__input" id="search__input" placeholder="Pokemon name">
+      <button class="search__button" type="submit">Search</button>
+    </form>
+    
+    <h2 class="pokemons__heading">Pokemons</h2>
+    <section class="pokemons__wrapper">
+      <ul class="pokemons__list">
+        
+      </ul>
+    </section>
+  </div>
+  
+  <template id="pokemons__template">
+    <li class="pokemon__item">
+      <img class="pokemon__img">
+      <p class="pokemon__name"></p>
+      <button class="pokemon__info__btn">Info</button>
+    </li>
+  </template>
+  
+  <section class="modal">
+    <div class="modal__contant">
+      <button class="modal__close__btn" type="button">X</button>
+      <img class="modal__img">
+      <h3 class="modal__heading">a</h3>
+      <p class="modal__text">a</p>
+    </div>
+  </section>
+  <script src="js/pokemons.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
